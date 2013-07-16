@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<orders>
+  <order>
+    <customer>foo</customer>
+    <status>pending</status>
+    <user_orderid>rep1</user_orderid>
+    <item>item1</item>
+    <price>12</price>
+    <quantity>12</quantity>
+  </order>
+  <order>
+    <customer>bar</customer>
+    <status>pending</status>
+    <user_orderid>rep1</user_orderid>
+    <item>item2</item>
+    <price>120</price>
+    <quantity>1</quantity>
+  </order>
+</orders>
