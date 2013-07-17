@@ -24,6 +24,8 @@ repositories {
 }
 
 dependencies {
+	gaeSdk "com.google.appengine:appengine-java-sdk:${gaeVersion}"
+
 	compile "javax.servlet:servlet-api:2.5"
 
 	compile "com.google.appengine:appengine-api-1.0-sdk:${gaeVersion}"
@@ -37,9 +39,9 @@ sourceSets {
 webAppDirName = 'war' 
 
 gae {
-	dependencies {
-		gaeSdk "com.google.appengine:appengine-java-sdk:${gaeVersion}"
-	}
+//	dependencies {
+//		gaeSdk "com.google.appengine:appengine-java-sdk:${gaeVersion}"
+//	}
 
     httpPort = 8888
     jvmFlags = ['-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8889', '-Xmx1024m', '-XX:MaxPermSize=512m']
