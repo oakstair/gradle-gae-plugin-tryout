@@ -1,20 +1,18 @@
-apply plugin: 'gae'
+apply plugin: 'appengine'
+apply plugin: 'java'
 apply plugin: 'eclipse'
 
-// To be able to deploy to Google Appengine change these two
-def appId     = "gunnar-testar"					// 	Change to your test appid
-def appEmail  = "gunnar.eketrapp@gmail.com"		// 	Change to your email
+def appId     = "gunnar-testar"					
+def appEmail  = "gunnar.eketrapp@gmail.com"		
 
-def gaeVersion   = "1.8.0"
+def appengineVersion = "1.8.6"
 
 buildscript {
     repositories {
-        mavenLocal()
         mavenCentral()
     }
-
     dependencies {
-        classpath 'org.gradle.api.plugins:gradle-gae-plugin:0.8'
+        classpath "com.google.appengine:gradle-appengine-plugin:1.8.6"
     }
 }
 
@@ -24,11 +22,11 @@ repositories {
 }
 
 dependencies {
-	gaeSdk "com.google.appengine:appengine-java-sdk:${gaeVersion}"
+	appengineSdk "com.google.appengine:appengine-java-sdk:${appengineVersion}"
 
 	compile "javax.servlet:servlet-api:2.5"
 
-	compile "com.google.appengine:appengine-api-1.0-sdk:${gaeVersion}"
+	compile "com.google.appengine:appengine-api-1.0-sdk:${appengineVersion}"
 }
 
 sourceSets {
@@ -38,10 +36,7 @@ sourceSets {
 
 webAppDirName = 'war' 
 
-gae {
-//	dependencies {
-//		gaeSdk "com.google.appengine:appengine-java-sdk:${gaeVersion}"
-//	}
+appengine {
 
     httpPort = 8888
     jvmFlags = ['-Xdebug', '-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8889', '-Xmx1024m', '-XX:MaxPermSize=512m']
