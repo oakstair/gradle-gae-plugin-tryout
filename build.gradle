@@ -1,11 +1,12 @@
-apply plugin: 'appengine'
 apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'appengine'
 apply plugin: 'eclipse'
 
 def appId     = "gunnar-testar"					
 def appEmail  = "gunnar.eketrapp@gmail.com"		
 
-def appengineVersion = "1.8.6"
+def appengineVersion = "1.8.7"
 
 buildscript {
     repositories {
@@ -58,7 +59,7 @@ appengine {
         }
 
         app {
-            id = 'gunnar-testar'
+            id = "${appId}"
             version = '131'
         }
     }
