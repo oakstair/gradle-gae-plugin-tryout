@@ -11,7 +11,7 @@ To build, deploy and test locally: (Assuming you have **git** and **gradle** ins
 
 1. git clone git@github.com:oakstair/gradle-gae-plugin-tryout.git
 1. cd gradle-gae-plugin-tryout
-1. gradle appengineRun              [Builds and runs it locally]
+1. gradle appengineRun        
 1. In a web browser goto http://localhost:8888
 1. Try to upload the file data/orders1.xml
 1. **Kaboom!**
@@ -21,8 +21,8 @@ To build, deploy and test on appengine:
 1. git clone git@github.com:oakstair/gradle-gae-plugin-tryout.git
 1. cd gradle-gae-plugin-tryout
 1. Edit ./build.gradle and set appId and appEamil to your own values.
-1. Edit war/WEB-INF(appengine.xmlChange and set the application to your application name.
-1. gradle appengineUpdate          [Builds and deploys your app to appengine]
+1. Edit war/WEB-INF/appengine-web.xml  Change application to your application name.
+1. gradle appengineUpdate  
 1. In a web browser goto http://your-app-name.appsot.com
 1. Try to upload the file data/orders1.xml
 1. **Kaboom!**
