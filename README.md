@@ -6,8 +6,6 @@ There are current some issues with this example since crashes both locally and o
     Unresolved compilation problems: 
     The import com.google.appengine.api cannot be resolved
     
-1. I have to apply the war plugin before the appengine plugin.
-1. If you run it (locally or on appengine) and tries to upload the file data/orders1.xml it crashes due to missing classes. 
 So there is something wrong with how the classpath is set up.
 
 To build, deploy and test locally: (Assuming you have **git** and **gradle** installed)
