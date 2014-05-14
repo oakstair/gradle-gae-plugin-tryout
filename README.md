@@ -1,10 +1,13 @@
 This project uses gradle & gradle-appengine-plugin to build, test and deploy a google example project. 
 See http://googcloudlabs.appspot.com/codelabexercise8.html
 
-There are current some issues with this example that I would like to fix:
+There are current some issues with this example since crashes both locally and on appengine.
 
-1. I have to apply both the java and the war plugin before the appengine plugin. (This has been fixed in a pull request by Nils Magnus ...)
-1.  If you run it (locally or on appengine) and tries to upload the file data/orders1.xml it crashes due to missing classes. 
+    Unresolved compilation problems: 
+    The import com.google.appengine.api cannot be resolved
+    
+1. I have to apply the war plugin before the appengine plugin.
+1. If you run it (locally or on appengine) and tries to upload the file data/orders1.xml it crashes due to missing classes. 
 So there is something wrong with how the classpath is set up.
 
 To build, deploy and test locally: (Assuming you have **git** and **gradle** installed)
