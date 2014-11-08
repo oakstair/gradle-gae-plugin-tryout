@@ -5,14 +5,14 @@ apply plugin: 'eclipse'
 def appId     = "gunnar-testar"					
 def appEmail  = "gunnar.eketrapp@gmail.com"		
 
-def appengineVersion = "1.9.4"
+def appengineVersion = "1.9.15"
 
 buildscript {
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath "com.google.appengine:gradle-appengine-plugin:1.9.4"
+        classpath "com.google.appengine:gradle-appengine-plugin:1.9.15"
     }
 }
 
@@ -27,7 +27,10 @@ dependencies {
 	compile "javax.servlet:servlet-api:2.5"
 
 	compile "com.google.appengine:appengine-api-1.0-sdk:${appengineVersion}"
+	compile "com.google.appengine:appengine-api-labs:${appengineVersion}"
 }
+
+sourceSets.main.output.classesDir = 'src/main/webapp/WEB-INF/classes'
 
 appengine {
 

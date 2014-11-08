@@ -21,7 +21,7 @@ To build, deploy and test on appengine:
 
 1. git clone git@github.com:oakstair/gradle-gae-plugin-tryout.git
 1. cd gradle-gae-plugin-tryout
-1. Edit ./build.gradle and set appId and appEamil to your own values.
+1. Edit ./build.gradle and set appId and appEmail to your own values.
 1. Edit war/WEB-INF/appengine-web.xml  Change application to your application name.
 1. gradle appengineUpdate  
 1. In a web browser goto http://your-app-name.appsot.com

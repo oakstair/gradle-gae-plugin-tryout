@@ -2,8 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="lib" path="/Users/gunnar/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar"/>
-	<classpathentry exported="true" kind="lib" path="/Users/gunnar/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="/Users/gunnar/.gradle/caches/artifacts-24/filestore/com.google.appengine/appengine-api-1.0-sdk/1.8.0/jar/f4b5568889a58ea87593f644b79ee526e2a98423/appengine-api-1.0-sdk-1.8.0.jar"/>
+	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
