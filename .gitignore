@@ -1,5 +1,8 @@
 /bin
 /build
+/gradle
 .gradle/
 src/main/webapp/WEB-INF/classes
 .settings
+gradlew
+gradlew.bat
