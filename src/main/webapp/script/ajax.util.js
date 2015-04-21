@@ -195,7 +195,8 @@ var add = function(orders) {
 
 var confirm=function(){
 	$.ajax({
-		url : "http://order-backend.pull2-back.appspot.com/processOrder",
+		// TODO: Change "gunnar-testar" to your application name
+		url : "http://order-backend.gunnar-testar.appspot.com/processOrder",
 		type : "POST"
 	});
 	showHideCreate('order', false);
